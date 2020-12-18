@@ -2,12 +2,17 @@ h1{
     color:blue;
 }
 
+
 .header{
    background-color:#a52525;
    display:flex;
     justify-content: space-between;
     
 }
+body{
+    background-color:burlywood;
+    
+    }
 
 .grid{
   display: flex;
@@ -20,7 +25,16 @@ justify-content: space-evenly;
     border: 2px solid black;
     border-radius:50px;
 }
-
+.oragami p{
+    color:black;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
 .oragami{
     border-radius: 20px;
     background-color:#f5f5dc;
@@ -28,15 +42,16 @@ justify-content: space-evenly;
     font-family: fantasy;
     justify-content: space-evenly;
     padding: 30px;
+    position: relative;
 }
-.oragami:hover{transform: scale(1.2);
+.oragami:hover img{transform: scale(1.2);
 
 }
-
-body{
-background-color:burlywood;
-
+.oragami:hover p{
+ opacity: 1;
 }
+
+
 a{
     text-decoration: none;
 }
@@ -47,12 +62,3 @@ a:visited{
     color:white
 }
 
-body p{
-    color:black;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
